@@ -9,7 +9,7 @@ function Home() {
     Welcome to Kissena Baked Goods
   </h1>
   <h2 className="text-2xl font-medium text-slate-600"> Financial Statements</h2>
-  <p className='mx-20 text-lg text-green-200'>We are a new company. Year 2025 is our first year of operations. On this site, we will disclose thevfinancial statements for our investors.</p>
+  <p className='mx-20 text-lg text-green-200'>We are a new company. Year 2026 is our first year of operations. On this site, we will disclose thevfinancial statements for our investors.</p>
   <div className='bg-yellow-900' m-10></div>
 </div>) 
 }
