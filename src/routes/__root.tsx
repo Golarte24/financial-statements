@@ -1,6 +1,6 @@
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
+import { createRootRoute, HeadContent, Scripts } from '@tanstack/react-router'
+import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 
 import appCss from '../styles.css?url'
 
@@ -18,12 +18,19 @@ export const Route = createRootRoute({
         title: 'Kissena Baked Goods',
       },
     ],
-    links: [
-      {
-        rel: 'stylesheet',
-        href: appCss,
-      },
-    ],
+   
+links: [
+  {
+    rel: 'stylesheet',
+    href: appCss,
+  },
+  {
+    rel: 'icon',
+    type: 'image/svg+xml',
+    href: '/favicon.svg',
+  },
+],
+ 
   }),
   shellComponent: RootDocument,
 })
