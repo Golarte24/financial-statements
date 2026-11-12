@@ -1,5 +1,5 @@
 import { TanStackDevtools } from '@tanstack/react-devtools'
-import { createRootRoute, HeadContent, Scripts } from '@tanstack/react-router'
+import { createRootRoute, HeadContent, Link, Scripts } from '@tanstack/react-router'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 
 import appCss from '../styles.css?url'
@@ -41,9 +41,25 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body>
-        {children}
-        <TanStackDevtools
+<body>
+  <nav className="flex gap-6 border-b border-slate-600 p-4">
+    <Link to="/">Home</Link>
+    
+<Link
+  to="/disclosures"
+  className="text-ink-soft hover:text-ink"
+  activeProps={{
+    className: "font-semibold underline decoration-brand underline-offset-4",
+  }}
+  activeOptions={{ exact: true }}
+>
+  Disclosures
+</Link>
+
+  </nav>
+  {children}
+  <TanStackDevtools
+
           config={{
             position: 'bottom-right',
           }}
