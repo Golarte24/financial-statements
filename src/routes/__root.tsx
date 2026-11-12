@@ -49,7 +49,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   to="/disclosures"
   className="text-ink-soft hover:text-ink"
   activeProps={{
-    className: "font-semibold underline decoration-brand underline-offset-4",
+    className: "font-semibold underline decoration-brand underline-offset-8",
   }}
   activeOptions={{ exact: true }}
 >
