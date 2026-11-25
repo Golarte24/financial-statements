@@ -43,22 +43,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
 <body>
-  <nav className="flex gap-6 border-b border-slate-600 p-4">
-    <Link to="/">Home</Link>
-    
-<Link
-  to="/disclosures"
-  className="text-ink-soft hover:text-ink"
-  activeProps={{
-    className: "font-semibold underline decoration-brand underline-offset-8",
-  }}
-  activeOptions={{ exact: true }}
->
-  Disclosures
-</Link>
-
-  </nav>
-  <body>
+  
     <header className="border-b border-edge">
   <div className="max-w-4xl mx-auto px-6 py-4 flex flex-wrap gap-6 items-center justify-between">
     <Link to="/" className="font-display text-xl">Kissena Baked Goods</Link>
@@ -66,10 +51,20 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   <Link to="/" className="text-ink-soft hover:text-ink"
     activeProps={{ className: "font-semibold underline decoration-brand underline-offset-8" }}
     activeOptions={{ exact: true }}>Home</Link>
+
+<Link to="/income-statement" className="text-ink-soft hover:text-ink"
+  activeProps={{ className: "font-semibold underline decoration-brand underline-offset-8" }}>
+  Income Statement
+</Link>
+<Link to="/balance-sheet" className="text-ink-soft hover:text-ink"
+  activeProps={{ className: "font-semibold underline decoration-brand underline-offset-8" }}>
+  Balance Sheet
+</Link>
+
 </nav>
   </div>
 </header>
-  </body>
+  
   <main className="max-w-4xl mx-auto px-6 py-12">{children}</main>
   <footer className="border-t border-edge mt-16">
   <div className="max-w-4xl mx-auto px-6 py-8 text-ink-soft">
